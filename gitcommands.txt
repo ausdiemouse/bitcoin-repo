@@ -1,0 +1,84 @@
+
+git-sCm.com
+
+
+git-scm.com/downloads
+first time setup:
+configure username and email
+git config --global user.name "ausdiemouse"
+git config --global user.email "ausdiemouse@gmail.com"
+
+git verbs:
+git config --list
+git config --help
+git help add
+
+existing project on local m/c
+project online
+
+
+
+Local:
+git init myproject
+cd myproject
+touch testfile.txt
+git status
+git add . 		or git add <filename>  or git add -A
+git reset <filename> 	#removes file from staging area
+git reset		#removes all files from staging area	
+git commit -m "text"
+git log
+
+touch .gitignore
+	--add files names to the .gitignore file.
+	--git add .
+	--git commit -m "adding .gitignore"
+
+Branching and merging:
+git branch <branchname>
+git checkout <branchname>
+git checkout masteri
+git status 			#ensure that we are on the destination branch in most cases master before merging
+git merge <branchname>
+	git mergetool
+
+git remote
+
+git clone <repo path>		#ensure you are in the folder where you want to clone it too.
+git clone <repo path> ./<path>/<path>
+
+git remote -v
+git branch -a
+
+git diff
+
+git pull origin master
+git push origin master			#git push -u origin <branchname>	#git branch -a
+
+git branch --merged
+
+
+git branch -d <branchame>		#local delete
+git branch -a
+git push origin --delete <branchname>	#Remote delete
+
+
+
+#Revisit:
+git stash  
+git stash apply 
+
+Distributed:
+git pull
+git merge
+
+
+advanced:
+git log --graph --decorate --abbrev-commit -all --pretty=online
+
+
+
+Notes:
+Distributed and low bandwidth
+Journal of changes
+
