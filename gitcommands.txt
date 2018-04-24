@@ -42,7 +42,7 @@ git branch <branchname>
 git checkout <branchname>	git checkout -b <branchname>	#combine creation and checkout
 git checkout master
 git status 			#ensure that we are on the destination branch in most cases master before merging
-git merge <branchname>
+git merge <branchname>		git merge master 	#if you are on a dev branch and want to pull in master to dev.
 	git mergetool
 
 git branch -d <branchname>	#deletes a merged branch
@@ -86,12 +86,32 @@ git log --graph --decorate --abbrev-commit -all --pretty=online
 
 
 
+1)go to github/bitbucket create a repo
+2)
+
+
+
+push an existing repository from the command line:
+	git remote add origin https://github.com/ausdiemouse/git-demo.git
+	git push -u origin master		# -u switch tracks the changes.
+
+create a new repository on the command line:
+	echo "# git-demo" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/ausdiemouse/git-demo.git
+	git push -u origin master
+
+
 Notes:
 Distributed and low bandwidth
 Journal of changes
-Put master in the command prompt
-How to approach git clone or git init
 
+Put master in the command prompt?
+Going back to a previous version?
+
+How to approach git clone or git init
 Create branches based on features or simply create a dev branch
 
 
