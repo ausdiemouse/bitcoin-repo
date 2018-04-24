@@ -77,10 +77,12 @@ git stash
 git stash apply 
 
 Distributed:
-git pull
+git pull		#pulls all files into new repo
 git merge
 
-git fetch 
+git fetch 		#separate branch on repo
+
+git rebase	#linear workflow
 
 advanced:
 git log --graph --decorate --abbrev-commit -all --pretty=online
