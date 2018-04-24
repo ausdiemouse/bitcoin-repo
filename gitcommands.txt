@@ -80,10 +80,10 @@ Distributed:
 git pull
 git merge
 
+git fetch 
 
 advanced:
 git log --graph --decorate --abbrev-commit -all --pretty=online
-
 
 
 1)go to github/bitbucket create a repo
