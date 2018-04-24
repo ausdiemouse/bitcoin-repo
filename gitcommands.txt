@@ -24,8 +24,11 @@ cd myproject
 touch testfile.txt
 git status
 git add . 		or git add <filename>  or git add -A
+
 git reset <filename> 	#removes file from staging area
 git reset		#removes all files from staging area	
+git rm --cached <filename>	#removes from staging area
+
 git commit -m "text"
 git log
 
@@ -36,11 +39,16 @@ touch .gitignore
 
 Branching and merging:
 git branch <branchname>
-git checkout <branchname>
-git checkout masteri
+git checkout <branchname>	git checkout -b <branchname>	#combine creation and checkout
+git checkout master
 git status 			#ensure that we are on the destination branch in most cases master before merging
 git merge <branchname>
 	git mergetool
+
+git branch -d <branchname>	#deletes a merged branch
+git branch -D <branchname>	#delete branch even if not merged
+
+
 
 git remote
 
@@ -81,4 +89,11 @@ git log --graph --decorate --abbrev-commit -all --pretty=online
 Notes:
 Distributed and low bandwidth
 Journal of changes
+Put master in the command prompt
+How to approach git clone or git init
+
+Create branches based on features or simply create a dev branch
+
+
+
 
