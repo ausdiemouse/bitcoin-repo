@@ -115,5 +115,31 @@ How to approach git clone or git init
 Create branches based on features or simply create a dev branch
 
 
+Versioning
+Collaboration
+Backup
+Analyze
+types: SVN, CVS, Mercurial, Git
+git, github - opensource, distributed version control.
+jenkins - CI
+
+written in C by Linus Torvalds
+
+Create
+	init
+Change
+	status
+	add
+	commit
+	rm
+	reset
+Parallel Dev:
+	branch
+	merge
+	rebase
+Sync Repos:
+	add origin
+	push
+	pull
 
 
