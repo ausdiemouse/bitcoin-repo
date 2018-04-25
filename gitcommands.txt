@@ -5,7 +5,7 @@ git-sCm.com
 git-scm.com/downloads
 first time setup:
 configure username and email
-git config --global user.name "ausdiemouse"
+git config --global user.name "ausdiemouse"	#omit the "--global" switch to set for a local repo else it defaults to global setting 
 git config --global user.email "ausdiemouse@gmail.com"
 
 git verbs:
@@ -73,8 +73,11 @@ git push origin --delete <branchname>	#Remote delete
 
 
 #Revisit:
-git stash  
+git stash  		#clears current dir for quick fixes and allows user to go back to work. 	#git stash -u
 git stash apply 
+git stash list		#view
+git stash show		#inspect
+
 
 Distributed:
 git pull		#pulls all files into new repo
@@ -82,11 +85,11 @@ git merge
 
 git fetch 		#separate branch on repo
 
-git rebase	#linear workflow
+git rebase	#linear workflow	git rebase master
 
 advanced:
 git log --graph --decorate --abbrev-commit -all --pretty=online
-
+git log --author="ausdiemouse"
 
 1)go to github/bitbucket create a repo
 2)
@@ -112,6 +115,8 @@ Journal of changes
 
 Put master in the command prompt?
 Going back to a previous version?
+Ans:	git revert <7char-commit-hash>
+	git revert HEAD 			#last commit
 
 How to approach git clone or git init
 Create branches based on features or simply create a dev branch
@@ -122,10 +127,11 @@ Collaboration
 Backup
 Analyze
 types: SVN, CVS, Mercurial, Git
-git, github - opensource, distributed version control.
+git, github - opensource, distributed version control, fast, data integrity. 
 jenkins - CI
 
 written in C by Linus Torvalds
+
 
 Create
 	init
@@ -143,5 +149,14 @@ Sync Repos:
 	add origin
 	push
 	pull
+
+Create a repo/Pull from n existing repo
+Add files to the repo
+Commit changes
+push changes to repo
+create branches 
+merge branches 
+
+
 
 
