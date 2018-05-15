@@ -158,5 +158,9 @@ create branches
 merge branches 
 
 
+ssh-keygen
+ssh-add ~/.ssh/id_rsa	# add the key to authorized keys.
+ssh -vT git@github.com	# use this to validate the conection
+ssh-add -l		# list agents added
 
 
